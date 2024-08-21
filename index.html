@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    color: #f0f0f0;
+    background-color: #201f1f;
+    margin: 10px;
+    padding: 20px;
+}
+
+header {
+    background-color: #331c1c2d;
+    padding: 20px;
+    
+
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    transition: background 0.3s;
+}
+
+nav a:hover {
+    background-color: #00c3ff;
+    border-radius: 5px;
+}
+
+.intro {
+    text-align: center;
+    padding: 50px;
+}
+
+.intro h1 span {
+    color: #00c3ff;
+}
+
+.btn {
+    background-color: #00c3ff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background-color: #0099cc;
+}
+
+.profile-img img {
+    margin-top: 30px;
+    width: 100px;
+    border-radius: 50%;
+    border: 5px solid #00c3ff;
+    padding: 5px;
+}
+
+/* About Section */
+.about {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+    background-color: #333;
+}
+
+/* Services Section */
+.services {
+    padding: 50px;
+    background-color: #2c2c2c;
+}
+
+.service-items {
+    display: flex;
+    justify-content: space-around;
+}
+
+.service-item {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+}
+
+/* Portfolio Section */
+.portfolio {
+    padding: 50px;
+    background-color: #1e1e1e;
+}
+
+.project-items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* Contact Section */
+.contact {
+    padding: 50px;
+    background-color: #2c2c2c;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #00c3ff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0099cc;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1e1e1e;
+    color: #555;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .services {
+        text-align: center;
+    }
+
+    .service-items {
+        flex-direction: column;
+    }
+
+    .service-item {
+        margin-bottom: 20px;
+    }
+
+    .project-items {
+        flex-direction: column;
+    }
+
+    .project-items img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .intro {
+        padding: 20px;
+    }
+
+    .about {
+        padding: 20px;
+    }
+
+    .services {
+        padding: 20px;
+    }
+
+    .portfolio {
+        padding: 20px;
+    }
+
+    .contact {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .btn {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    .service-item {
+        padding: 10px;
+    }
+
+    .profile-img img {
+        width: 80%;
+    }
+
+    form input, form textarea {
+        padding: 8px;
+    }
+
+    form button {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="intro">
+            <h1>Hello, It's Me <br> <span>Nandini pathak</span></h1>
+            <p>And I'm a Frontend Developer</p>
+            <div class="social-links">
+                <!-- Social Media Icons -->
+            </div>
+            <a href="#" class="btn">Download CV</a>
+            <div class="profile-img">
+                <img src="downloadllllllllllllllll.jpeg" alt="image">
+                
+        </div>
+    </header>
+    
+    <section class="about">
+        <div class="profile-img">
+            <img src=" downloadllllllllllllllll.jpeg" alt="About Me">
+        </div>
+        <div class="about-text">
+            <h2><i><big>About <span>Me</span></i></big></h2>
+            <p><i>I'm a Web Developer and Graphic Designer.<br>I love Graphic design and photography and have been working on my skills for years.I am a creative person and love to learn new things.</i></p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+    </section>
+
+    <section class="services">
+        <h2>Our <span>Services</span></h2>
+        <div class="service-items">
+            <div class="service-item">
+                <h3>Web Development</h3>
+                <p>sed at perspiciatis undo omnis iste natus <br>error sit accusa itum dolor enque laudan.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+            <div class="service-item">
+                <h3>Graphic Design</h3>
+                <p>Description...</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+            <div class="service-item">
+                <h3>Digital Marketing</h3>
+                <p>Description...</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio">
+        <h2>Latest <span>Project</span></h2>
+        <div class="project-items">
+            <!-- Project Thumbnails -->
+        </div>
+    </section>
+
+    <section class="contact">
+        <h2>Contact <span>Me!</span></h2>
+        <form action="#">
+            <input type="text" placeholder="Name">
+            <input type="email" placeholder="Email">
+            <textarea placeholder="Message"></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2024 John Kendric | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
